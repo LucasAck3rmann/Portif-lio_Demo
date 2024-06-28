@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Portifólio</title>
+</head>
+<body class="d-flex flex-column align-items-center justify-content-center">
+    <style>
+        .header-centered{
+            display: flex;
+            justify-content: space-around;
+            background-color: #171717;
+            margin-top: 40px;
+            width: 1298px;
+            max-height: 86px;
+            gap: 80px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border-radius: 50px;
+        }
+        .header-centered a{
+            text-decoration: none;
+            transition: all 0.5s ease;
+            color: white;
+        }
+        .header-centered a:hover{
+            color: white;
+            font-weight: 700;
+            background-color: #FD853A;
+            border-radius: 60px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 40px;
+            padding-right: 40px;
+            margin-top: -20px;
+            margin-bottom: -20px;
+            margin-left: -40px;
+            margin-right: -40px;
+        }
+        .header-centered img{
+            width: 148px;
+            
+        }
+        .header-centered div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 95px;
+        }
+        .header-centered img{
+            cursor: pointer;
+        }
+    </style>
+    <header class="text-center header-centered">
+        <div>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#service">Service</a>
+        </div>
+            <img src="./assets/Group 12.svg" onclick="window.location.href='#home';">
+        <div>
+            <a href="#resume">Resume</a>
+            <a href="#project">Project</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </header>
+    <section>
+        <div>
+            <p>Hello!</p>
+        </div>
+    </section>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
