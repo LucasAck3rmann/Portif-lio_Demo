@@ -7,70 +7,67 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" integrity="sha512-IJEbgDEF7OeKJRa0MY2PApnyJHRIsgzCveek4ec8VWQ+7KG3ZSKVNYa5xP/Gh0hVP0Mwb+gBsk+GwR3JQGhQNg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Portifólio</title>
     <style>
-      /* Estilo personalizado para a navbar */
       .navbar-custom {
         display: flex;
-        justify-content: center; /* Centraliza horizontalmente */
-        align-items: center; /* Centraliza verticalmente, se necessário */
-        background-color: #171717; /* Cor de fundo da navbar */
-        border-radius: 50px; /* Bordas arredondadas */
-        margin: 40px auto; /* Margem superior e inferior 40px, e laterais automáticas */
-        padding: 20px 0; /* Padding superior e inferior */
-        max-width: 1298px; /* Tamanho máximo da navbar */
+        justify-content: center; 
+        align-items: center;
+        background-color: #171717; 
+        border-radius: 50px;
+        margin: 40px auto; 
+        padding: 20px 0;
+        max-width: 1298px;
       }
-
-      /* Estilo para os itens de navegação */
       .navbar-nav {
-        margin: 0 auto; /* Centraliza os itens de navegação */
+        margin: 0 auto;
         display: flex;
         gap: 96px;
       }
-
-      /* Estilo para os links de navegação */
       .navbar-nav .nav-link {
-        color: white !important; /* Cor do texto dos links */
-        transition: all 0.5s ease; /* Transição suave para hover */
-        padding: 20px 40px; /* Padding ao passar o mouse */
+        font-family: "Poppins", sans-serif;
+        color: white !important;
+        transition: all 0.5s ease;
+        padding: 20px 40px;
       }
-
-      /* Estilo para o hover dos links de navegação */
       .navbar-nav .nav-link:hover {
-        color: white !important; /* Cor do texto ao passar o mouse */
-        font-weight: 700; /* Negrito ao passar o mouse */
-        background-color: #fd853a; /* Cor de fundo ao passar o mouse */
-        border-radius: 60px; /* Bordas arredondadas */
-        padding: 20px 40px; /* Padding ao passar o mouse */
+        color: white !important; 
+        font-weight: 700;
+        background-color: #fd853a;
+        border-radius: 60px;
+        padding: 20px 40px;
         margin-top: -20px;
         margin-bottom: -20px;
         margin-left: -40px;
         margin-right: -40px;
       }
-
-      /* Estilo para a imagem da logo */
       .navbar-brand img {
-        width: 148px; /* Largura da imagem da logo */
+        width: 148px;
         margin-left: 10px;
       }
-
-      /* Estilo para a seção home */
       .section_home {
-        padding-top: 200px; /* Padding superior para evitar sobreposição com a navbar */
+        padding-top: 200px;
       }
       .jenny {
-        width: 913px;
+        font-family: "Poppins", sans-serif;
         position: relative;
         font-size: 95.57px;
         letter-spacing: -0.01em;
         line-height: 100%;
         font-weight: 600;
-        font-family: Urbanist;
         text-align: center;
         display: inline-block;
-        color: #171717;
+        color: #FD853A;
       }
       .hello {
+        font-family: "Poppins", sans-serif;
+        height: 45px;
+        width: 103.45px;
         color: #171717;
         font-size: 20px;
         font-style: normal;
@@ -86,30 +83,64 @@
         border: 1.275px solid #171717;
         background: rgba(255, 255, 255, 0.1);
       }
+      .span{
+        width: 127.49px;
+        height: 64px;
+        position: relative;
+        gap: 24px;
+      }
       .span img {
         position: absolute;
-        width: 27.5px;
-        height: 28.5px;
-        left: 51.7%;
-        bottom: 78%;
+        bottom: 100%;
+        right: 0%;
+      }
+      .text_primary{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .h1{
+        max-width: 850px;
+      }
+      .h1 h1{
+        position: relative;
+        font-family: "Poppins", sans-serif;
+        font-size: 95.57px;
+        letter-spacing: -0.01em;
+        line-height: -1.5%;
+        font-weight: 600;
+        text-align: center;
+        color: #171717;
+      }
+      .photo{
+        position: relative;
+        z-index: 99;
+        margin-top: -115px;
+      }
+      .photo .linha{
+        position: absolute;
+        left: -10%;
+        top: 20%;
+        
+      }
+      .final-itens{
+        display: flex;
+        flex-direction: row;
       }
     </style>
   </head>
   <body>
-    <!-- Navbar Bootstrap customizada -->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
       <div class="container d-flex justify-content-between">
-        <!-- Links do lado esquerdo -->
         <div class="navbar-nav d-flex align-items-center">
           <a class="nav-item nav-link" href="#home">Home</a>
           <a class="nav-item nav-link" href="#about">About</a>
           <a class="nav-item nav-link" href="#service">Service</a>
         </div>
-        <!-- Logo centralizada -->
         <a class="navbar-brand" href="#home">
           <img src="./assets/Group 12.svg" alt="Logo" />
         </a>
-        <!-- Links do lado direito -->
         <div class="navbar-nav d-flex align-items-center">
           <a class="nav-item nav-link" href="#resume">Resume</a>
           <a class="nav-item nav-link" href="#project">Project</a>
@@ -117,16 +148,26 @@
         </div>
       </div>
     </nav>
-    <!-- Seção Home -->
     <section class="section_home" id="home">
-      <div class="container text-center">
+      <div class="text_primary d-flex align-items-center">
         <div class="span">
           <img src="./assets/vector_1.svg" alt="" />
           <span class="hello">Hello!</span>
         </div>
+        <div class="h1">
+          <h1>I'm <span class="jenny">Jenny</span>, Product Designer</h1>
+        </div>
+        <div class="final_itens">
+          <div class="photo">
+            <img class="linha" src="./assets/Vector 2.svg" alt="">
+            <img  src="./assets/Frame 57.png" alt="">
+          </div>
+          <div class="avaliacao">
+            
+          </div>
+        </div>
       </div>
     </section>
-    <!-- Scripts Bootstrap -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
