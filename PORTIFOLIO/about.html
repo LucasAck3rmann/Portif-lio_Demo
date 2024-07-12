@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"
+      integrity="sha512-IJEbgDEF7OeKJRa0MY2PApnyJHRIsgzCveek4ec8VWQ+7KG3ZSKVNYa5xP/Gh0hVP0Mwb+gBsk+GwR3JQGhQNg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Portfólio</title>
+    <style>
+      .barra-navegacao {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #171717;
+        border-radius: 50px;
+        margin: 40px auto;
+        padding: 20px 0;
+        max-width: 1298px;
+      }
+      .links-navegacao {
+        margin: 0 auto;
+        display: flex;
+      }
+      .links-navegacao .link {
+        border-radius: 60px;
+        font-family: "Poppins", sans-serif;
+        color: white !important;
+        transition: all 0.5s ease;
+        padding: 20px 40px;
+      }
+      .links-navegacao .link:hover {
+        color: white !important;
+        font-weight: 700;
+        background-color: #fd853a;
+        border-radius: 60px;
+      }
+      .marca img {
+        width: 148px;
+        margin-left: 10px;
+      }
+      .work-experince {
+        color: #fd853a;
+      }
+      .my-work-experince-container {
+        position: relative;
+        letter-spacing: -0.01em;
+        line-height: 100%;
+        font-weight: 500;
+      }
+      .my-work-experince-wrapper {
+        align-self: stretch;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 85px 0px;
+      }
+      .cognizant-mumbai {
+        position: relative;
+        letter-spacing: -0.01em;
+        line-height: 100%;
+        font-weight: 600;
+      }
+      .sep-2016-july {
+        position: relative;
+        font-size: 24px;
+        letter-spacing: -0.01em;
+        line-height: 100%;
+        color: #98a2b3;
+      }
+      .cognizant-mumbai-parent {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 14px;
+      }
+      .frame-container {
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 102px;
+      }
+      .frame-child {
+        width: 3px;
+        position: absolute;
+        margin: 0 !important;
+        top: -1.5px;
+        left: calc(50% - 1.5px);
+        border-right: 3px dashed #344054;
+        box-sizing: border-box;
+        height: 397px;
+        z-index: 0;
+      }
+      .frame-item {
+        width: 36px;
+        position: relative;
+        border-radius: 50%;
+        background-color: #fd853a;
+        height: 36px;
+      }
+      .ellipse-wrapper {
+        width: 50px;
+        border-radius: 48px;
+        background-color: #fff;
+        border: 2px dashed #1d2939;
+        box-sizing: border-box;
+        height: 50px;
+        overflow: hidden;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+      .frame-inner {
+        width: 36px;
+        position: relative;
+        border-radius: 50%;
+        background-color: #1d2939;
+        height: 36px;
+      }
+      .frame-div {
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        z-index: 1;
+      }
+      .line-parent {
+        height: 400px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: relative;
+        gap: 10px;
+      }
+      .lorem-ipsum-dolor {
+        width: 444px;
+        position: relative;
+        font-size: 20px;
+        letter-spacing: -0.01em;
+        font-weight: 500;
+        color: #98a2b3;
+        display: inline-block;
+      }
+      .lead-ux-designer-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+      .frame-parent1 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 48px;
+      }
+      .frame-group {
+        width: 1298px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        font-size: 40px;
+      }
+      .frame-parent {
+        margin-top: 150px;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0px 71px;
+        box-sizing: border-box;
+        text-align: left;
+        font-size: 64px;
+        color: #344054;
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark barra-navegacao fixed-top">
+      <div class="container d-flex justify-content-between">
+        <div class="links-navegacao d-flex align-items-center">
+          <a class="nav-item link" href="index.html">Home</a>
+          <a class="nav-item link" href="about.html">Sobre</a>
+        </div>
+        <a class="marca" href="index.html">
+          <img src="./assets/Group 12.svg" alt="Logo" />
+        </a>
+        <div class="links-navegacao d-flex align-items-center">
+          <a class="nav-item link" href="project.html">Projetos</a>
+          <a class="nav-item link" href="contact.html">Contato</a>
+        </div>
+      </div>
+    </nav>
+    <section>
+      <div class="frame-parent">
+        <div class="my-work-experince-wrapper">
+          <div class="my-work-experince-container">
+            <span>My </span>
+            <span class="work-experince">Work Experince</span>
+          </div>
+        </div>
+        <div class="frame-group">
+          <div class="frame-container">
+            <div class="cognizant-mumbai-parent">
+              <div class="cognizant-mumbai">Cognizant, Mumbai</div>
+              <div class="sep-2016-july">Sep 2016- July 2020</div>
+            </div>
+            <div class="cognizant-mumbai-parent">
+              <div class="cognizant-mumbai">Sugee Pvt limited, Mumbai</div>
+              <div class="sep-2016-july">Sep 2020- July 2023</div>
+            </div>
+            <div class="cognizant-mumbai-parent">
+              <div class="cognizant-mumbai">Cinetstox, Mumbai</div>
+              <div class="sep-2016-july">Sep 2023</div>
+            </div>
+          </div>
+          <div class="line-parent">
+            <div class="frame-child"></div>
+            <div class="frame-div">
+              <div class="ellipse-wrapper">
+                <div class="frame-item"></div>
+              </div>
+              <div class="ellipse-wrapper">
+                <div class="frame-inner"></div>
+              </div>
+              <div class="ellipse-wrapper">
+                <div class="frame-item"></div>
+              </div>
+            </div>
+          </div>
+          <div class="frame-parent1">
+            <div class="cognizant-mumbai-parent">
+              <div class="cognizant-mumbai">Experince Designer</div>
+              <div class="lorem-ipsum-dolor">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                lacus nunc, posuere in justo vulputate, bibendum sodales
+              </div>
+            </div>
+            <div class="cognizant-mumbai-parent">
+              <div class="cognizant-mumbai">UI/UX Designer</div>
+              <div class="lorem-ipsum-dolor">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                lacus nunc, posuere in justo vulputate, bibendum sodales
+              </div>
+            </div>
+            <div class="lead-ux-designer-wrapper">
+              <div class="cognizant-mumbai">Lead UX Designer</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

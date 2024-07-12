@@ -29,7 +29,7 @@
     />
     <title>Portfólio</title>
     <style>
-      .navbar-custom {
+      .barra-navegacao {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -39,31 +39,31 @@
         padding: 20px 0;
         max-width: 1298px;
       }
-      .navbar-links {
+      .links-navegacao {
         margin: 0 auto;
         display: flex;
       }
-      .navbar-links .nav-link {
+      .links-navegacao .link {
         border-radius: 60px;
         font-family: "Poppins", sans-serif;
         color: white !important;
         transition: all 0.5s ease;
         padding: 20px 40px;
       }
-      .navbar-links .nav-link:hover {
+      .links-navegacao .link:hover {
         color: white !important;
         font-weight: 700;
         background-color: #fd853a;
         border-radius: 60px;
       }
-      .navbar-brand img {
+      .marca img {
         width: 148px;
         margin-left: 10px;
       }
-      .section-home {
+      .secao-home {
         padding-top: 200px;
       }
-      .highlighted-text {
+      .texto-destaque {
         font-family: "Poppins", sans-serif;
         position: relative;
         font-size: 95.57px;
@@ -74,7 +74,7 @@
         display: inline-block;
         color: #fd853a;
       }
-      .greeting {
+      .saudacao {
         font-family: "Poppins", sans-serif;
         height: 45px;
         width: 103.45px;
@@ -93,27 +93,27 @@
         border: 1.275px solid #171717;
         background: rgba(255, 255, 255, 0.1);
       }
-      .greeting-container {
+      .container-saudacao {
         width: 127.49px;
         height: 64px;
         position: relative;
         gap: 24px;
       }
-      .greeting-container img {
+      .container-saudacao img {
         position: absolute;
         bottom: 100%;
         right: 0%;
       }
-      .text-primary {
+      .texto-principal {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
       }
-      .title-container {
+      .container-titulo {
         max-width: 850px;
       }
-      .title-container h1 {
+      .container-titulo h1 {
         position: relative;
         font-family: "Poppins", sans-serif;
         font-size: 95.57px;
@@ -123,29 +123,29 @@
         text-align: center;
         color: #171717;
       }
-      .photo-container {
+      .container-foto {
         position: relative;
         z-index: 99;
         margin-top: -115px;
       }
-      .photo-container .line {
+      .container-foto .linha {
         position: absolute;
         left: -10%;
         top: 20%;
       }
-      .content-wrapper {
+      .container-conteudo {
         display: flex;
         justify-content: center;
         align-items: center;
       }
-      .review {
+      .avaliacao {
         max-width: 328px;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
       }
-      .review span {
+      .avaliacao span {
         color: #171717;
         text-align: center;
         font-family: "Poppins", sans-serif;
@@ -155,7 +155,7 @@
         line-height: 100%; /* 47px */
         letter-spacing: -0.705px;
       }
-      .review p {
+      .avaliacao p {
         color: #171717;
         text-align: center;
         font-family: "Poppins", sans-serif;
@@ -165,7 +165,7 @@
         line-height: 100%; /* 20px */
         letter-spacing: -0.3px;
       }
-      .review .comment {
+      .avaliacao .comentario {
         text-align: left;
         max-width: 170px;
         color: #344054;
@@ -176,22 +176,22 @@
         line-height: normal;
         letter-spacing: -0.3px;
       }
-      .image-container {
+      .container-imagem {
         width: 603px;
         position: relative;
         height: 600px;
       }
-      .hire-me-text {
+      .texto-contrate-me {
         color: #fd853a;
       }
-      .hire-me-header {
+      .cabecalho-contrate-me {
         align-self: stretch;
         position: relative;
         letter-spacing: -0.01em;
         line-height: 100%;
         font-weight: 600;
       }
-      .hire-me-wrapper {
+      .container-contrate-me {
         font-family: "Poppins", sans-serif;
         align-self: stretch;
         display: flex;
@@ -199,7 +199,7 @@
         align-items: flex-start;
         justify-content: flex-start;
       }
-      .description {
+      .descricao {
         font-family: "Poppins", sans-serif;
         width: 444px;
         position: relative;
@@ -208,20 +208,20 @@
         color: #98a2b3;
         display: inline-block;
       }
-      .stats {
+      .estatisticas {
         font-family: "Poppins", sans-serif;
         position: relative;
         letter-spacing: -0.01em;
         font-weight: 500;
       }
-      .completed-projects {
+      .projetos-completos {
         font-family: "Poppins", sans-serif;
         position: relative;
         font-size: 20px;
         letter-spacing: -0.01em;
         color: #667085;
       }
-      .stats-container {
+      .container-estatisticas {
         flex: 1;
         display: flex;
         flex-direction: column;
@@ -229,7 +229,7 @@
         justify-content: flex-start;
         gap: 10px;
       }
-      .hire-me-stats {
+      .estatisticas-contrate-me {
         align-self: stretch;
         display: flex;
         flex-direction: row;
@@ -239,13 +239,13 @@
         font-size: 36px;
         color: #1d2939;
       }
-      .hire-me-button {
+      .botao-contrate-me {
         font-family: "Poppins", sans-serif;
         position: relative;
         letter-spacing: -0.01em;
         font-weight: 600;
       }
-      .hire-me-button-wrapper {
+      .container-botao {
         border-radius: 32px;
         border: 1px solid #151515;
         display: flex;
@@ -256,7 +256,7 @@
         font-size: 32px;
         color: #151515;
       }
-      .hire-me-section {
+      .secao-contrate-me {
         flex: 1;
         display: flex;
         flex-direction: column;
@@ -264,7 +264,7 @@
         justify-content: flex-start;
         gap: 47px;
       }
-      .main-content {
+      .conteudo-principal {
         width: 1299px;
         height: 600px;
         display: flex;
@@ -273,7 +273,7 @@
         justify-content: space-between;
         gap: 52px;
       }
-      .frame-wrapper {
+      .container-quadro {
         width: 100%;
         position: relative;
         border-radius: 50px;
@@ -289,96 +289,95 @@
         text-align: left;
         font-size: 64px;
         color: #344054;
-        font-family: Lufga;
+        font-family: "Poppins", sans-serif;
       }
     </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark barra-navegacao fixed-top">
       <div class="container d-flex justify-content-between">
-        <div class="navbar-links d-flex align-items-center">
-          <a class="nav-item nav-link" href="#home">Home</a>
-          <a class="nav-item nav-link" href="#about">About</a>
-          <a class="nav-item nav-link" href="#service">Service</a>
+        <div class="links-navegacao d-flex align-items-center">
+          <a class="nav-item link" href="index.html">Home</a>
+          <a class="nav-item link" href="about.html">Sobre</a>
         </div>
-        <a class="navbar-brand" href="#home">
+        <a class="marca" href="index.html">
           <img src="./assets/Group 12.svg" alt="Logo" />
         </a>
-        <div class="navbar-links d-flex align-items-center">
-          <a class="nav-item nav-link" href="#resume">Resume</a>
-          <a class="nav-item nav-link" href="#project">Project</a>
-          <a class="nav-item nav-link" href="#contact">Contact</a>
+        <div class="links-navegacao d-flex align-items-center">
+          <a class="nav-item link" href="project.html">Projetos</a>
+          <a class="nav-item link" href="contact.html">Contato</a>
         </div>
       </div>
     </nav>
-    <section class="section-home" id="home">
-      <div class="text-primary d-flex align-items-center">
-        <div class="greeting-container">
+    <section class="secao-home" id="home">
+      <div class="texto-principal d-flex align-items-center">
+        <div class="container-saudacao">
           <img src="./assets/vector_1.svg" alt="" />
-          <span class="greeting">Hello!</span>
+          <span class="saudacao">Olá!</span>
         </div>
-        <div class="title-container">
+        <div class="container-titulo">
           <h1>
-            I'm <span class="highlighted-text">Jenny</span>, Product Designer
+            Eu sou <span class="texto-destaque">Jenny</span>, Designer de
+            Produtos
           </h1>
         </div>
-        <div class="content-wrapper d-flex align-items-center">
-          <div class="review">
-            <span class="comment"
-              >Jenny’s Exceptional product design ensure our website’s
-              success. Highly Recommended</span
+        <div class="container-conteudo d-flex align-items-center">
+          <div class="avaliacao">
+            <span class="comentario"
+              >O design excepcional de produto da Jenny assegura o sucesso do
+              nosso site. Altamente recomendado!</span
             >
           </div>
-          <div class="final-items">
-            <div class="photo-container">
-              <img class="line" src="./assets/Vector 2.svg" alt="" />
+          <div class="itens-finais">
+            <div class="container-foto">
+              <img class="linha" src="./assets/Vector 2.svg" alt="" />
               <img src="./assets/Frame 57.png" alt="" />
             </div>
           </div>
-          <div class="review">
-            <div class="stars">
+          <div class="avaliacao">
+            <div class="estrelas">
               <img src="./assets/Star.svg" alt="" />
               <img src="./assets/Star.svg" alt="" />
               <img src="./assets/Star.svg" alt="" />
               <img src="./assets/Star.svg" alt="" />
               <img src="./assets/Star.svg" alt="" />
             </div>
-            <span>10 YEARS</span>
-            <p>Experience</p>
+            <span>10 ANOS</span>
+            <p>Experiência</p>
           </div>
         </div>
       </div>
-      <div class="frame-wrapper">
-        <div class="main-content">
+      <div class="container-quadro">
+        <div class="conteudo-principal">
           <img
-            class="image-container"
+            class="container-imagem"
             alt=""
             src="./assets/c33f2ece91ab6f55e11cdcd6c4f9c261.png"
           />
-          <div class="hire-me-section">
-            <div class="hire-me-wrapper">
-              <div class="hire-me-header">
-                <span>Why </span>
-                <span class="hire-me-text">Hire me</span>
+          <div class="secao-contrate-me">
+            <div class="container-contrate-me">
+              <div class="cabecalho-contrate-me">
+                <span>Por que </span>
+                <span class="texto-contrate-me">me contratar</span>
                 <span>?</span>
               </div>
             </div>
-            <div class="description">
+            <div class="descricao">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
               lacus nunc, posuere in justo vulputate, bibendum sodales
             </div>
-            <div class="hire-me-stats">
-              <div class="stats-container">
-                <div class="stats">450+</div>
-                <div class="completed-projects">Project Completed</div>
+            <div class="estatisticas-contrate-me">
+              <div class="container-estatisticas">
+                <div class="estatisticas">450+</div>
+                <div class="projetos-completos">Projetos Completados</div>
               </div>
-              <div class="stats-container">
-                <div class="stats">450+</div>
-                <div class="completed-projects">Project Completed</div>
+              <div class="container-estatisticas">
+                <div class="estatisticas">450+</div>
+                <div class="projetos-completos">Projetos Completados</div>
               </div>
             </div>
-            <div class="hire-me-button-wrapper">
-              <div class="hire-me-button">Hire me</div>
+            <div class="container-botao">
+              <div class="botao-contrate-me">Me contrate</div>
             </div>
           </div>
         </div>
