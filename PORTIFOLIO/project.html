@@ -29,6 +29,12 @@
     />
     <title>Portfólio</title>
     <style>
+      body {
+        background-image: url(./assets/Frame\ 327.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
       .barra-navegacao {
         display: flex;
         justify-content: center;
@@ -60,6 +66,165 @@
         width: 148px;
         margin-left: 10px;
       }
+      .grid-item {
+        height: 200px;
+        background-color: #f8f9fa;
+        border: 1px solid #dee2e6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+      .grid-item:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      .fade-in {
+        opacity: 0;
+        animation: fadeIn 1s forwards;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      section {
+        padding-top: 200px;
+      }
+      .itens {
+        height: 200px;
+      }
+      .lets-discuss {
+        color: #fd853a;
+      }
+      .have-an-awsome-container1 {
+        width: 100%;
+      }
+      .have-an-awsome-container {
+        width: 799px;
+        position: relative;
+        letter-spacing: -0.01em;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        height: 150px;
+        flex-shrink: 0;
+      }
+      .vuesaxboldsms-icon {
+        width: 32px;
+        position: relative;
+        height: 32px;
+      }
+      .vuesaxboldsms-wrapper {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        border-radius: 50px;
+        background-color: #ffead5;
+        width: 64px;
+        height: 58px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+      .enter-email-address {
+        position: absolute;
+        top: 18.13px;
+        left: 81px;
+        letter-spacing: -0.01em;
+        font-weight: 500;
+        width: 200px;
+      }
+      .frame-group {
+        align-self: stretch;
+        width: 253px;
+        position: relative;
+      }
+      .home {
+        position: relative;
+        letter-spacing: -0.01em;
+        font-weight: 500;
+      }
+      .home-wrapper {
+        border-radius: 60px;
+        background-color: #fd853a;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 40px;
+        color: #fff;
+      }
+      .group-parent {
+        width: 832px;
+        backdrop-filter: blur(15px);
+        border-radius: 50px;
+        border: 1px solid #e4e7ec;
+        box-sizing: border-box;
+        height: 86px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 14px;
+      }
+      .vuesaxboldstar-icon {
+        width: 24px;
+        position: relative;
+        height: 24px;
+      }
+      .average-ratings {
+        position: relative;
+        letter-spacing: -0.01em;
+      }
+      .vuesaxboldstar-parent {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+      }
+      .frame-container {
+        width: 770px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 16px;
+        font-family: "Poppins", sans-serif;
+      }
+      .frame-parent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        text-align: left;
+        font-size: 20px;
+        color: #ffffff;
+        font-family: "Poppins", sans-serif;
+      }
+      .have-an-awsome-project-idea-l-parent {
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 98px 0px;
+        box-sizing: border-box;
+        gap: 10px;
+        text-align: center;
+        font-size: 64px;
+        color: #ffffff;
+        font-family: "Poppins", sans-serif;
+      }
     </style>
   </head>
   <body>
@@ -78,6 +243,89 @@
         </div>
       </div>
     </nav>
+    <section>
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-4 mb-4 fade-in">
+            <div class="grid-item">
+              <img src="./assets/item_1.png" alt="" class="itens" />
+            </div>
+          </div>
+          <div class="col-md-4 mb-4 fade-in">
+            <div class="grid-item">
+              <img src="./assets/item_2.png" alt="" class="itens" />
+            </div>
+          </div>
+          <div class="col-md-4 mb-4 fade-in">
+            <div class="grid-item">
+              <img src="./assets/item_3.jpg" alt="" class="itens" />
+            </div>
+          </div>
+          <div class="col-md-4 mb-4 fade-in">
+            <div class="grid-item">
+              <img src="./assets/item_4.jpg" alt="" class="itens" />
+            </div>
+          </div>
+          <div class="col-md-4 mb-4 fade-in">
+            <div class="grid-item">
+              <img src="./assets/imte_5.jpg" alt="" class="itens" />
+            </div>
+          </div>
+          <div class="col-md-4 mb-4 fade-in">
+            <div class="grid-item">
+              <img src="./assets/item_2.png" alt="" class="itens" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="have-an-awsome-project-idea-l-parent">
+        <div class="have-an-awsome-container">
+          <span class="have-an-awsome-container1">
+            <span>Have an Awsome Project Idea? </span>
+            <span class="lets-discuss">Let’s Discuss</span>
+          </span>
+        </div>
+        <div class="frame-parent">
+          <div class="group-parent">
+            <div class="frame-group">
+              <div class="vuesaxboldsms-wrapper">
+                <img class="vuesaxboldsms-icon" alt="" src="./assets/sms.svg" />
+              </div>
+              <div class="enter-email-address">Enter Email Address</div>
+            </div>
+            <div class="home-wrapper">
+              <div class="home">Send</div>
+            </div>
+          </div>
+          <div class="frame-container">
+            <div class="vuesaxboldstar-parent">
+              <img
+                class="vuesaxboldstar-icon"
+                alt=""
+                src="./assets/stare.svg"
+              />
+              <div class="average-ratings">4.9/5 Average Ratings</div>
+            </div>
+            <div class="vuesaxboldstar-parent">
+              <img
+                class="vuesaxboldstar-icon"
+                alt=""
+                src="./assets/award.svg"
+              />
+              <div class="average-ratings">25+ Winning Awards</div>
+            </div>
+            <div class="vuesaxboldstar-parent">
+              <img
+                class="vuesaxboldstar-icon"
+                alt=""
+                src="./assets/shield-tick.svg"
+              />
+              <div class="average-ratings">Certified Product Designer</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
